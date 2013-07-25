@@ -85,6 +85,11 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     return YES;
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    // Ensure the done button persists on field change
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneButton:)];
+}
+
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
     // When the text field is no longer selected for edit remove the done button
