@@ -7,14 +7,26 @@
 //
 
 #import "YAppDelegate.h"
+#import "MainViewController.h"
 
 @implementation YAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    // Setup my main view controller
+    MainViewController *mainViewController = [[MainViewController alloc] init];
+    
+    // Setup a navigation controller and embed the main view controller
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    
+    // load up the navigation controller as the root
+    self.window.rootViewController = navigationController;
+    
+    // Set background color for the window
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -21,6 +21,8 @@
 		30DDAAAE17A059E8002D2C33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DDAA8F17A059E8002D2C33 /* Foundation.framework */; };
 		30DDAAB617A059E8002D2C33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30DDAAB417A059E8002D2C33 /* InfoPlist.strings */; };
 		30DDAAB917A059E8002D2C33 /* TempatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DDAAB817A059E8002D2C33 /* TempatureTests.m */; };
+		30DDAAC517A05A44002D2C33 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DDAAC317A05A44002D2C33 /* MainViewController.m */; };
+		30DDAAC617A05A44002D2C33 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30DDAAC417A05A44002D2C33 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		30DDAAB517A059E8002D2C33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30DDAAB717A059E8002D2C33 /* TempatureTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TempatureTests.h; sourceTree = "<group>"; };
 		30DDAAB817A059E8002D2C33 /* TempatureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempatureTests.m; sourceTree = "<group>"; };
+		30DDAAC217A05A44002D2C33 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		30DDAAC317A05A44002D2C33 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		30DDAAC417A05A44002D2C33 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 				30DDAA9C17A059E8002D2C33 /* YAppDelegate.h */,
 				30DDAA9D17A059E8002D2C33 /* YAppDelegate.m */,
 				30DDAA9417A059E8002D2C33 /* Supporting Files */,
+				30DDAAC217A05A44002D2C33 /* MainViewController.h */,
+				30DDAAC317A05A44002D2C33 /* MainViewController.m */,
+				30DDAAC417A05A44002D2C33 /* MainViewController.xib */,
 			);
 			path = Tempature;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 				30DDAAA017A059E8002D2C33 /* Default.png in Resources */,
 				30DDAAA217A059E8002D2C33 /* Default@2x.png in Resources */,
 				30DDAAA417A059E8002D2C33 /* Default-568h@2x.png in Resources */,
+				30DDAAC617A05A44002D2C33 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +273,7 @@
 			files = (
 				30DDAA9A17A059E8002D2C33 /* main.m in Sources */,
 				30DDAA9E17A059E8002D2C33 /* YAppDelegate.m in Sources */,
+				30DDAAC517A05A44002D2C33 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
