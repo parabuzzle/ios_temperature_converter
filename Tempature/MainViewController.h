@@ -18,7 +18,7 @@
 @property (nonatomic, weak) UIColor *backgroundColor; //used for background color
 
 #pragma mark - Public methods
-- (IBAction)onDoneButton:(UITextField*)sender;
+- (IBAction)onDoneButton;
 - (IBAction)onConvertButton;
 
 @end

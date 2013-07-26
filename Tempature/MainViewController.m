@@ -87,7 +87,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     // Ensure the done button persists on field change
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneButton:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneButton)];
 }
 
 
@@ -99,7 +99,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #pragma mark - Public Methods
 
-- (void)onDoneButton:(UITextField *)sender {
+- (void)onDoneButton {
     // Since we want to convert on button press.. lets just remove the keyboard
     [self.view endEditing:(YES)];
     
@@ -110,6 +110,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 - (void)onConvertButton {
     // Convert button was pressed... lets convert!
     [self convertTemp];
+    
+    // also dismiss the keyboard...
+    [self onDoneButton];
 }
 
 #pragma mark - Private Methods
